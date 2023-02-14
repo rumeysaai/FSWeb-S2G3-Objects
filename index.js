@@ -221,11 +221,13 @@ console.log(UzunDegerlendirmeleriAl(degerlendirmeler));
 */
 
 
-function arabaYapici(/* Kodlar buraya */) {
-    /* Kodlar buraya */
+function arabaYapici(sayac) {
+	this.sayac=sayac;
+    this.drive = function(km){
+		return km+=this.sayac;
+	}
     
 }
-
 
 /*  Buradan aşağıdaki kodları değiştirmeyin lütfen */
 function sa(){
